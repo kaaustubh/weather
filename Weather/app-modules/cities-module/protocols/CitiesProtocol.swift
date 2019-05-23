@@ -26,7 +26,7 @@ protocol PresenterToViewProtocol: class{
 
 protocol PresenterToRouterProtocol: class {
     static func createModule()-> CitiesViewController
-
+    func pushToDetailScreen(navigationConroller navigationController:UINavigationController)
 }
 
 protocol PresenterToInteractorProtocol: class {

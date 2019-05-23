@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32920D05229722B0002B1E67 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32920D04229722B0002B1E67 /* DetailPresenter.swift */; };
+		32920D07229722C7002B1E67 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32920D06229722C7002B1E67 /* DetailRouter.swift */; };
+		32920D09229722F1002B1E67 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32920D08229722F1002B1E67 /* DetailInteractor.swift */; };
+		32920D0B22972312002B1E67 /* DetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32920D0A22972312002B1E67 /* DetailProtocols.swift */; };
 		32EA7A1D22968E8C0012D80A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EA7A1C22968E8C0012D80A /* AppDelegate.swift */; };
 		32EA7A1F22968E8C0012D80A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EA7A1E22968E8C0012D80A /* ViewController.swift */; };
 		32EA7A2222968E8C0012D80A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32EA7A2022968E8C0012D80A /* Main.storyboard */; };
@@ -21,10 +25,15 @@
 		32EA7A5A2296BA8A0012D80A /* Cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32EA7A592296BA8A0012D80A /* Cities.plist */; };
 		32EA7A5C2296BD4D0012D80A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EA7A5B2296BD4D0012D80A /* Constants.swift */; };
 		32EA7A5E2296D7B60012D80A /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EA7A5D2296D7B60012D80A /* CityCell.swift */; };
+		32EA7A60229722240012D80A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EA7A5F229722240012D80A /* DetailViewController.swift */; };
 		E5B072497A83BE8346DA83FF /* Pods_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B6C14C4B3C7CABA220BE35 /* Pods_Weather.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32920D04229722B0002B1E67 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		32920D06229722C7002B1E67 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		32920D08229722F1002B1E67 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		32920D0A22972312002B1E67 /* DetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocols.swift; sourceTree = "<group>"; };
 		32EA7A1922968E8C0012D80A /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32EA7A1C22968E8C0012D80A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32EA7A1E22968E8C0012D80A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +50,7 @@
 		32EA7A592296BA8A0012D80A /* Cities.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Cities.plist; sourceTree = "<group>"; };
 		32EA7A5B2296BD4D0012D80A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		32EA7A5D2296D7B60012D80A /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		32EA7A5F229722240012D80A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		33B6C14C4B3C7CABA220BE35 /* Pods_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B86D28E004718E8B1A3992 /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
 		784C50FCBFC20F34E65E6D8D /* Pods-Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.release.xcconfig"; path = "Pods/Target Support Files/Pods-Weather/Pods-Weather.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +154,7 @@
 		32EA7A332296909C0012D80A /* interactor */ = {
 			isa = PBXGroup;
 			children = (
+				32920D08229722F1002B1E67 /* DetailInteractor.swift */,
 			);
 			path = interactor;
 			sourceTree = "<group>";
@@ -151,6 +162,7 @@
 		32EA7A34229690A70012D80A /* presenter */ = {
 			isa = PBXGroup;
 			children = (
+				32920D04229722B0002B1E67 /* DetailPresenter.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -158,6 +170,7 @@
 		32EA7A35229690B20012D80A /* protocols */ = {
 			isa = PBXGroup;
 			children = (
+				32920D0A22972312002B1E67 /* DetailProtocols.swift */,
 			);
 			path = protocols;
 			sourceTree = "<group>";
@@ -165,6 +178,7 @@
 		32EA7A36229690BD0012D80A /* router */ = {
 			isa = PBXGroup;
 			children = (
+				32920D06229722C7002B1E67 /* DetailRouter.swift */,
 			);
 			path = router;
 			sourceTree = "<group>";
@@ -172,6 +186,7 @@
 		32EA7A37229690C40012D80A /* view */ = {
 			isa = PBXGroup;
 			children = (
+				32EA7A5F229722240012D80A /* DetailViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -368,8 +383,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32EA7A60229722240012D80A /* DetailViewController.swift in Sources */,
 				32EA7A1F22968E8C0012D80A /* ViewController.swift in Sources */,
 				32EA7A582296A0AD0012D80A /* CitiesPresenter.swift in Sources */,
+				32920D07229722C7002B1E67 /* DetailRouter.swift in Sources */,
 				32EA7A5E2296D7B60012D80A /* CityCell.swift in Sources */,
 				32EA7A4F229696680012D80A /* CitiesViewController.swift in Sources */,
 				32EA7A52229698BD0012D80A /* CityModel.swift in Sources */,
@@ -377,7 +394,10 @@
 				32EA7A4D229695CB0012D80A /* CitiesProtocol.swift in Sources */,
 				32EA7A5622969EBB0012D80A /* CitiesInteractor.swift in Sources */,
 				32EA7A1D22968E8C0012D80A /* AppDelegate.swift in Sources */,
+				32920D09229722F1002B1E67 /* DetailInteractor.swift in Sources */,
 				32EA7A5C2296BD4D0012D80A /* Constants.swift in Sources */,
+				32920D0B22972312002B1E67 /* DetailProtocols.swift in Sources */,
+				32920D05229722B0002B1E67 /* DetailPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

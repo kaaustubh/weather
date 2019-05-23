@@ -24,7 +24,6 @@ class CitiesInteractor: PresenterToInteractorProtocol
         {
             cities = data as NSArray
         }
-    
         var count = 0
         for city in cities
         {

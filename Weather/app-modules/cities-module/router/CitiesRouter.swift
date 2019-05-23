@@ -29,4 +29,8 @@ class CitiesRouter: PresenterToRouterProtocol {
     static var mainstoryboard: UIStoryboard{
         return UIStoryboard(name:"Main",bundle: Bundle.main)
     }
+    
+    func pushToDetailScreen(navigationConroller navigationController:UINavigationController) {
+        
+    }
 }
