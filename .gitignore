@@ -1,0 +1,9 @@
+.DS_Store
+xcuserdata/
+project.xcworkspace/
+DerivedData/
+build/
+*.[oa]
+*~.nib
+*.swp
+*.peme
