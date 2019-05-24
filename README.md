@@ -4,3 +4,8 @@
 3. Run pod install in the root folder
 4. On successful pod install, open Weather.xcworkspace
 5. It should run seemlessly on Simulator, if not clean(Command+Shift+k)) and Run again
+
+Things Missed:
+1. Error Handling
+2. A nice UX :(
+3. The New swift features may be(since it has been a long time I have worked on swift)
