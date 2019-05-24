@@ -15,7 +15,7 @@ protocol ViewToPresenterProtocol: class{
     var interactor: PresenterToInteractorProtocol? {get set}
     var router: PresenterToRouterProtocol? {get set}
     func startFetchingCities()
-//    func showCitiesController(navigationController:UINavigationController)
+    func showDetailedWeatherControllerWith(navigationController:UINavigationController, forCity city: CityModel)
 }
 
 
@@ -26,7 +26,7 @@ protocol PresenterToViewProtocol: class{
 
 protocol PresenterToRouterProtocol: class {
     static func createModule()-> CitiesViewController
-    func pushToDetailScreen(navigationConroller navigationController:UINavigationController)
+    func pushToDetailScreen(navigationConroller navigationController:UINavigationController, city: CityModel)
 }
 
 protocol PresenterToInteractorProtocol: class {

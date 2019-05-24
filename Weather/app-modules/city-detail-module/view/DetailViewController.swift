@@ -13,17 +13,27 @@ class DetailViewController: UIViewController{
     
     var presenter: DetailPresenterProtocol?
     var mycity: CityModel?
+    @IBOutlet weak var cloudLabel: UILabel!
+    @IBOutlet weak var windLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Detail Weather"
+        self.title = "Detailed Weather"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.title = mycity?.title
+        self.cloudLabel.text = String.init(format: "It will be %@%% cloudy today", (mycity?.cloud)!)
+        self.windLabel.text = String.init(format: "The wind will be at %@mph today", (mycity?.wind)!)
     }
 }
+
+
 
 extension DetailViewController: DetailViewProtocol
 {
     func showDetailsFor(city: CityModel) {
-        
+        self.mycity = city
     }
     
 }

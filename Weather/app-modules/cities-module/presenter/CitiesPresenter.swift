@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
-class CitiesPresenter:ViewToPresenterProtocol {
-    
+class CitiesPresenter: ViewToPresenterProtocol {
+
     var view: PresenterToViewProtocol?
     
     var interactor: PresenterToInteractorProtocol?
@@ -18,6 +19,11 @@ class CitiesPresenter:ViewToPresenterProtocol {
     
     func startFetchingCities() {
         interactor?.fetchCities()
+    }
+    
+    func showDetailedWeatherControllerWith(navigationController: UINavigationController, forCity city: CityModel) {
+        var detailController = DetailRouter.createDetailModule(model: city)
+        navigationController.pushViewController(detailController, animated: true)
     }
 }
 

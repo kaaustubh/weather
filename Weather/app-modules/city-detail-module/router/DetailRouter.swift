@@ -15,9 +15,9 @@ class DetailRouter: RouterProtocol {
         let view = DetailRouter.mainstoryboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
         
         let presenter: DetailPresenterProtocol = DetailPresenter()
-        
+        presenter.view = view
         let router:RouterProtocol = DetailRouter()
-    
+        presenter.showDetailsFor(city: model)
         
         return view
     }

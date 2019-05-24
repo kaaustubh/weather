@@ -12,6 +12,7 @@ import AlamofireImage
 
 class CitiesViewController: UIViewController {
     
+    
     var presentor:ViewToPresenterProtocol?
     
     @IBOutlet weak var uiTableView: UITableView!
@@ -50,8 +51,8 @@ extension CitiesViewController:UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-//        presentor?.showMovieController(navigationController: navigationController!)
-        
+        presentor?.showDetailedWeatherControllerWith(navigationController: self.navigationController!, forCity: cityArrayList[indexPath.row])
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 

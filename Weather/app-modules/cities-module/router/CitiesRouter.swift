@@ -10,6 +10,11 @@ import Foundation
 import UIKit
 
 class CitiesRouter: PresenterToRouterProtocol {
+    func pushToDetailScreen(navigationConroller navigationController: UINavigationController, city: CityModel) {
+        let detailsController = DetailRouter.createDetailModule(model: city)
+        navigationController.pushViewController(detailsController, animated: true)
+    }
+    
     static func createModule() -> CitiesViewController {
         let view = mainstoryboard.instantiateViewController(withIdentifier: "CitiesViewController") as! CitiesViewController
         
@@ -28,9 +33,5 @@ class CitiesRouter: PresenterToRouterProtocol {
     
     static var mainstoryboard: UIStoryboard{
         return UIStoryboard(name:"Main",bundle: Bundle.main)
-    }
-    
-    func pushToDetailScreen(navigationConroller navigationController:UINavigationController) {
-        
     }
 }

@@ -91,5 +91,52 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="aoS-Db-UNR">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="i94-vT-eKj" customClass="DetailViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="glz-fQ-b3Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmM-Im-gOp">
+                                <rect key="frame" x="20" y="56" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ed1-Yt-M0O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1L2-nj-6fE">
+                                <rect key="frame" x="20" y="136" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JEH-zn-Cml"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1L2-nj-6fE" firstAttribute="top" secondItem="pmM-Im-gOp" secondAttribute="bottom" constant="30" id="BAS-Ac-7RM"/>
+                            <constraint firstItem="Wqd-Qy-Zkz" firstAttribute="trailing" secondItem="1L2-nj-6fE" secondAttribute="trailing" constant="20" id="DiJ-8s-yCF"/>
+                            <constraint firstItem="1L2-nj-6fE" firstAttribute="leading" secondItem="Wqd-Qy-Zkz" secondAttribute="leading" constant="20" id="Q9L-7L-vBV"/>
+                            <constraint firstItem="Wqd-Qy-Zkz" firstAttribute="trailing" secondItem="pmM-Im-gOp" secondAttribute="trailing" constant="20" id="anN-u9-uxG"/>
+                            <constraint firstItem="pmM-Im-gOp" firstAttribute="top" secondItem="Wqd-Qy-Zkz" secondAttribute="top" constant="36" id="b1G-rf-Vc4"/>
+                            <constraint firstItem="pmM-Im-gOp" firstAttribute="leading" secondItem="Wqd-Qy-Zkz" secondAttribute="leading" constant="20" id="mSR-1L-jNH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wqd-Qy-Zkz"/>
+                    </view>
+                    <connections>
+                        <outlet property="cloudLabel" destination="pmM-Im-gOp" id="0co-Hc-Jd6"/>
+                        <outlet property="windLabel" destination="1L2-nj-6fE" id="Gn1-Re-RcS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7fd-c1-LTz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048.8" y="20.239880059970016"/>
+        </scene>
     </scenes>
 </document>

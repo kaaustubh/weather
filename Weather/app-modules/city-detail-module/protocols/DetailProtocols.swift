@@ -10,8 +10,10 @@ import Foundation
 import UIKit
 
 protocol DetailPresenterProtocol: class{
-    var view: PresenterToViewProtocol? {get set}
+    var view: DetailViewProtocol? {get set}
     var router: PresenterToRouterProtocol? {get set}
+    
+    func showDetailsFor(city: CityModel)
 }
 
 protocol DetailViewProtocol: class{
