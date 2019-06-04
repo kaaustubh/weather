@@ -1,9 +1,10 @@
 # weather
 1. The App is built using Xcode v9.4.1
-2. Swift version- 4.1.2
-3. Run pod install in the root folder
-4. On successful pod install, open Weather.xcworkspace
-5. It should run seemlessly on Simulator, if not clean(Command+Shift+k)) and Run again
+2. VIPER Architecture
+3. Swift version- 4.1.2
+4. Run pod install in the root folder
+5. On successful pod install, open Weather.xcworkspace
+6. It should run seemlessly on Simulator, if not clean(Command+Shift+k)) and Run again
 
 Things Missed:
 1. Error Handling
